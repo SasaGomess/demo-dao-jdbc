@@ -31,7 +31,7 @@ public class Program {
 			System.out.println(obj);
 		}
 		System.out.println();
-		
+
 		System.out.println("=== TEST 3: seller findALL ===== ");
 		list = sellerDao.findAll();
 
@@ -39,11 +39,11 @@ public class Program {
 
 			System.out.println(obj);
 		}
-		
+
 		System.out.println();
-		
+
 		System.out.println("=== TEST 4: seller Insert ===== ");
-		
+
 		Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, department);
 		Seller newSeller2 = new Seller(null, "Sabrina", "sasa@gmail.com", new Date(), 3000.0, new Department(3, null));
 		sellerDao.insert(newSeller);
@@ -51,7 +51,19 @@ public class Program {
 		System.out.println("Inserted! New id = " + newSeller.getId());
 		System.out.println("Inserted! New id = " + newSeller2.getId());
 
+		System.out.println();
 
+		System.out.println("=== TEST 5: seller Update ===== ");
+		seller = sellerDao.findById(1);
+		seller.setName("Juliana");
+		seller.setEmail("juju@gmail.com");
+		
+		sellerDao.update(seller);	
+		
+		System.out.println("Update completed");
+
+		
+		
 
 	}
 }
