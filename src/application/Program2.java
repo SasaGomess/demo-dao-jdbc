@@ -16,15 +16,16 @@ public class Program2 {
 		DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 
 		System.out.println("===== TEST 1: department finById ======");
-
 		Department department = departmentDao.findById(1);
 		System.out.println(department);
 
 		System.out.println();
 
 		System.out.println("===== TEST 2: department delete by id ======");
-		System.out.print("Enter id value for department delete");
+		System.out.print("Enter Id value for department delete: (You can delete only the departments that are not table fathers): ");
+		
 		int id = sc.nextInt();
+		
 		departmentDao.deleteById(id);
 		System.out.println("Delete was completed");
 
@@ -35,6 +36,8 @@ public class Program2 {
 		department.setName("Music");
 		departmentDao.update(department);
 		System.out.println(department);
+		System.out.println("Update was completed");
+
 		
 		System.out.println();
 
@@ -48,7 +51,12 @@ public class Program2 {
 		System.out.println("===== TEST 5: department findAll ======");
 		List<Department> depp = new ArrayList<>();
 		depp = departmentDao.findAll();
-		System.out.println(depp + "\n");
+		
+		for(Department x : depp) {
+			
+			System.out.println(x);
+			
+		}
 
 		sc.close();
 	}
