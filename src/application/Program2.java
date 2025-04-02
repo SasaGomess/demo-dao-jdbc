@@ -1,10 +1,32 @@
 package application;
 
+import java.util.Scanner;
+
+import model.dao.DaoFactory;
+import model.dao.DepartmentDao;
+import model.entities.Department;
+
 public class Program2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
 
+		DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
+
+		System.out.println("===== TEST 2: department finById ======");
+
+		Department department = departmentDao.findById(1);
+		System.out.println(department);
+
+		System.out.println();
+		
+		System.out.println("===== TEST 1: department delete by id ======");
+		System.out.print("Enter id value for department delete");
+		int id = sc.nextInt();
+		departmentDao.deleteById(id);
+		System.out.println("Delete was completed");
+
+		sc.close();
 	}
 
 }
