@@ -20,11 +20,11 @@ public class Program2 {
 
 		System.out.println();
 		
-		System.out.println("===== TEST 2: department delete by id ======");
+		/*System.out.println("===== TEST 2: department delete by id ======");
 		System.out.print("Enter id value for department delete");
 		int id = sc.nextInt();
 		departmentDao.deleteById(id);
-		System.out.println("Delete was completed");
+		System.out.println("Delete was completed");*/
 		
 		System.out.println();
 		
@@ -33,6 +33,12 @@ public class Program2 {
 		department.setName("Music");
 		departmentDao.update(department);
 		System.out.println(department);
+		
+		System.out.println("===== TEST 4: department insert ======");
+		Department departamento1 = new Department(null, "Fashion");
+		departmentDao.insert(departamento1);
+		System.out.println("New department id: " + departamento1.getId());
+
 		
 	
 
