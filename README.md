@@ -11,7 +11,7 @@ Projeto utilizando padrões DAO com JDBC.
 ### Vantagens ✔️ 
 
 * **Transparência**: Implementar dados de forma solida e e transparente, os objetos de negócio podem utilizar a fonte de dados sem conhecer os detalhes especificos da implementação da base de dados, sendo assim muito mais fácil a troca da mesma e na manutenção da aplicação.
-* **Injeção de dependência**: O dao permite a injeção de dependência no meu caso eu utilizei o padrão **Dao Factory** criando uma classe FactoryDao, responsável por criar dois métodos que dão acesso a minha Interface que é implementada por duas classes que utiliozam a **JDBC** são responsáveis pela implementação dos métodos utilizando o ````java.sql```` para acesso ao banco de dados.
+* **Injeção de dependência**: O dao permite a injeção de dependência no meu caso eu utilizei o padrão **Dao Factory** criando uma classe FactoryDao, responsável por criar dois métodos que dão acesso a minha Interface que é implementada por duas classes que utilizam a **JDBC** são responsáveis pela implementação dos métodos utilizando o ````java.sql```` para acesso ao banco de dados.
   
  ![Captura de tela 2025-04-02 180025](https://github.com/user-attachments/assets/7721cff3-21f5-4fb8-afbf-129334887142)
 * **Reduz a complexidade do código nas entidades de negócio**: Pois as classes DAO já cuidam de toda complexidade do código de acesso ao banco de dados.
