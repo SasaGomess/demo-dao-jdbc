@@ -1,7 +1,7 @@
 # demo-dao-jdbc 🗃️
 Projeto utilizando padrões DAO com JDBC.
 
-<h2>Seja bem vindo ao meu projeto utilizando padrão Data Access Object!</h2>
+<h2>Seja bem vindo ao projeto utilizando padrão Data Access Object!</h2>
 
 ### O que é o DAO?
 É um padrão de design de objeto de acesso á dados, é o padrão de projeto que permite separar as **regras de negócio** das **regras de acesso aos dados**.
@@ -21,4 +21,6 @@ O projeto consiste na manipulação de acesso aos dados apartir de duas tabelas 
 * Banco de dados: MySQL
 * JDBC: API para fazer acesso aos dados.
 * Biblioteca MySQLConnector: Biblioteca personalizada para realizar a conexão com o banco de dados pela JDBC.
+  
+
 
