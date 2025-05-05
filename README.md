@@ -32,7 +32,7 @@ O projeto consiste na manipulação de acesso aos dados apartir de duas entidade
 3. **Crie as tabelas:** Execute os scripts SQL fornecidos no projeto para criar as tabelas necessárias no banco de dados. Os scripts estão localizados em um diretório chamado ````database.sql````.
 4. **Importe o projeto em sua IDE de preferência Eclipse ou IntelliJ**   
 5. **Configure as credenciais:** No arquivo db.properties, insira as credenciais do seu banco de dados MySQL (nome do usuário, senha, URL do banco de dados).
-6. **Rode o projeto:** Program(Seller) e Program2(Departament) (dividdos pois cada um das aplicações irá manipular objetos e tabelas diferentes).
+6. **Rode o projeto:** Program(Seller) e Program2(Departament) (divididos pois cada uma das aplicações irá manipular objetos e tabelas diferentes).
    
 
 
